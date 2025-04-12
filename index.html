@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>FrontEnd Meeting</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+
+  <body>
+    <div class="bg-image"></div>
+    <main class="content-container">
+      <div class="form-wrapper">
+        <div class="form-container">
+          <img class="logo" src="https://aubay.pt/logo.svg" alt="" />
+          <h2>Signup</h2>
+          <form id="signupForm">
+            <div class="form-group">
+              <label for="Name">Name:</label>
+              <input type="text" id="Name" name="Name" />
+              <p class="error-message error-color" id="error-name">
+                Name is required.
+              </p>
+            </div>
+            <div class="form-group">
+              <label for="email">Email:</label>
+              <input type="text" id="email" name="email" />
+              <p class="error-message error-color" id="error-email">
+                Email is required.
+              </p>
+            </div>
+            <div class="form-group">
+              <label for="password">Password:</label>
+              <input type="password" id="password" name="password" />
+              <p class="error-message error-color" id="error-password">
+                Password is required.
+              </p>
+            </div>
+            <div class="form-group">
+              <button type="submit">Submit</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </main>
+
+    <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>

@@ -1,70 +1,100 @@
 body {
-    margin: 0;
-    padding: 0;
-    background-color: fff;
-    font-family: Arial, sans-serif;
-    width: 100vw;
-    height: 100vh;
-    position: relative;
+  margin: 0;
+  padding: 0;
+  background: orange url("bg-image.png") repeat;
+  font-family: Arial, sans-serif;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  animation: scrollBackground 10s linear infinite;
+}
+
+@keyframes scrollBackground {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 100% 0;
+  }
+}
+
+.logo {
+  width: 100%;
+}
+
+.form-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  flex-direction: column;
 }
 
 .form-container {
-    width: 300px;
-    padding: 20px;
-    background-color: rgba(255, 255, 255, 0.8); 
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  width: 300px;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
 .form-container h2 {
-    text-align: center;
-    margin-bottom: 20px;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 .form-group {
-    margin-bottom: 15px;
+  margin-bottom: 15px;
+}
+.form-group.error input {
+  border: 1px solid red;
+}
+
+.form-group.error .error-message {
+  display: block;
 }
 
 .form-group label {
-    display: block;
-    margin-bottom: 5px;
+  display: block;
+  margin-bottom: 5px;
 }
 
 .form-group input {
-    width: 100%;
-    padding: 8px;
-    box-sizing: border-box;
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
 }
 
 .form-group button {
-    width: 100%;
-    padding: 10px;
-    background-color: #e74514;
-    color: #fff;
-    border: none;
-    cursor: pointer;
+  width: 100%;
+  padding: 10px;
+  background-color: #e74514;
+  color: #fff;
+  border: none;
+  cursor: pointer;
 }
 
 .form-group button:hover {
-    opacity: 0.7;
-}
-.error-msg{
-    margin-bottom: 10px;
-    margin-top: 10px;
-    font-size: 10px;
-    font-weight: bold;
+  opacity: 0.7;
 }
 
-.error-color{
-    color: red;
+.error-msg {
+  margin-bottom: 10px;
+  margin-top: 10px;
+  font-size: 10px;
+  font-weight: bold;
+}
+
+.error-color {
+  color: red;
 }
 
 p {
-    margin: 0;
-    font-size: 8px;
-    font-weight: bold;
-    text-transform: uppercase;
-    margin-top: 5px;
-    display:none;
+  margin: 0;
+  font-size: 8px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-top: 5px;
+  display: none;
 }
-
